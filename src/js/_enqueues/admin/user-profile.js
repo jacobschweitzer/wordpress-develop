@@ -246,6 +246,7 @@
 			wp.ajax.post( 'generate-password' )
 				.done( function( data ) {
 					$pass1.data( 'pw', data );
+					$pass1.val( data );
 				} );
 		} );
 
